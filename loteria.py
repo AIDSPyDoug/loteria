@@ -2,7 +2,7 @@ import numpy as np
 import time
 def jogo():
   rng = np.random.default_rng()
-  return sorted(rng.choice(range(0,61), size=10, replace=False))
+  return sorted(rng.choice(range(0,61), size=6, replace=False))
 def espera():
   return(np.random.randint(0, 10))
 def jogar(qtde):
@@ -13,4 +13,5 @@ def jogar(qtde):
     combinacao = jogo()
     
     print('Jogo', i+1, ':' , combinacao)
-jogar(25)
+qtde=10
+jogar(qtde)
